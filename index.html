@@ -1,8 +1,32 @@
 <html>
     <head>
-        
+        <script type="text/javascript" src="libs/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="libs/jreSlider.js"></script>
     </head>
     <body>
+    
+    <style type="text/css">
+     #slider img {
+          width: 425px;
+          height: 300px;
+     }
+    </style>
+    
+        <div id="slider">
+        <ul>
+          <li><img width="425" height="300" src="http://4.bp.blogspot.com/_mU7Kd_VTNvY/TKTodWSqoKI/AAAAAAAAAvo/gKSAGZkbDBQ/s1600/Google.jpg" /></li>
+          <li><img width="425" height="300" src="http://4.bp.blogspot.com/_mU7Kd_VTNvY/TKTodWSqoKI/AAAAAAAAAvo/gKSAGZkbDBQ/s1600/Google.jpg" /></li>
+          <li><img width="425" height="300" src="http://4.bp.blogspot.com/_mU7Kd_VTNvY/TKTodWSqoKI/AAAAAAAAAvo/gKSAGZkbDBQ/s1600/Google.jpg" /></li>
+          <li><img width="425" height="300" src="http://4.bp.blogspot.com/_mU7Kd_VTNvY/TKTodWSqoKI/AAAAAAAAAvo/gKSAGZkbDBQ/s1600/Google.jpg" /></li>
+          <li><img width="425" height="300" src="http://4.bp.blogspot.com/_mU7Kd_VTNvY/TKTodWSqoKI/AAAAAAAAAvo/gKSAGZkbDBQ/s1600/Google.jpg" /></li>
+          <li><img width="425" height="300" src="http://4.bp.blogspot.com/_mU7Kd_VTNvY/TKTodWSqoKI/AAAAAAAAAvo/gKSAGZkbDBQ/s1600/Google.jpg" /></li>
+        </ul>
+        </div>
         
+        <script type="text/javascript">
+          $(document).ready(function(){
+               $('#slider ul').jreslider();     
+          });
+        </script>
     </body>
 </html>

@@ -14,7 +14,7 @@
             debug: false,
             next: '',
             prev: ''
-        }
+        };
 
         var config = jQuery.extend( defaults, options );
 
@@ -40,13 +40,13 @@
             totalWidth = slideWidth * totalSlides;
             debug( 'totalWidth: ' + totalWidth );
             prepareHtml();
-            if( config.auto != 0 ){
+            if( config.auto !== 0 ){
                 startTimer();
             }
-            if( prev != '' || next != '' ){
+            if( prev !== '' || next !== '' ){
                 setControllers();
             }
-        }
+        };
 
         var prepareHtml = function(){
             container.css({
@@ -67,7 +67,7 @@
             $('#jrcarousel-wrapper-horizontal').css({
                 'width': totalWidth
             });
-        }
+        };
 
         var next = function(){
             if( currentPosition + 1 == totalSlides ){
@@ -77,7 +77,7 @@
             }
             debug( 'currentPosition: '+ currentPosition );
             moveToPosition();
-        }
+        };
 
         var prev = function(){
             if( currentPosition - 1 == -1 ){
@@ -87,50 +87,50 @@
             }
             debug( 'currentPosition: '+ currentPosition );
             moveToPosition();
-        }
+        };
 
         var moveToPosition = function(){
             $('#jrcarousel-wrapper-horizontal').animate({
                 'marginLeft': - ( slideWidth * currentPosition )
             });
-        }
+        };
 
         var startTimer = function(){
             timer = setInterval( function(){
                 next();
-            }, config.auto * 1000 )
-        }
+            }, config.auto * 1000 );
+        };
 
         var setControllers = function(){
-            if( config.next != '' ){
+            if( config.next !== '' ){
                 $( config.next ).live( 'click', function(){
                     timerOperations();
                     next();
-                } )
+                } );
             }
-            if( config.prev != '' ){
+            if( config.prev !== '' ){
                 $( config.prev ).live( 'click', function(){
                     timerOperations();
                     prev();
-                } )
+                } );
             }
-        }
+        };
 
         var timerOperations = function(){
-            if( config.auto != 0 ){
+            if( config.auto !== 0 ){
                 clearInterval( timer );
-                clearTimeout( timeout )
+                clearTimeout( timeout );
                 timeout = setTimeout( function(){
                     startTimer();
-                }, config.auto * 1000 )
+                }, config.auto * 1000 );
             }
-        }
+        };
 
         var debug = function( value ) {
             if( config.debug && console ){
                 console.log( value );
             }
-        }
+        };
 
         init();
     };
