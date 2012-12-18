@@ -29,10 +29,10 @@
         var timeout;
 
         var init = function(){
-            slideWidth = container.children().find('img').css('width').match(/[0-9]+/g);
+            slideWidth = container.children().css('width').match(/[0-9]+/g);
             debug( 'slideWidth: ' + slideWidth );
 
-            slideHeight = container.children().find('img').css('height').match(/[0-9]+/g);
+            slideHeight = container.children().css('height').match(/[0-9]+/g);
             debug( 'slideHeight: ' + slideHeight );
 
             totalSlides = container.children().length;
