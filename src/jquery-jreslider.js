@@ -1,5 +1,6 @@
 /**
  * jreSlider
+ *
  * @author Rodrigo da Rosa Elesbão <slipknabos@gmail.com>
  * Plugin jQuery.
  **/
@@ -135,4 +136,3 @@
         init();
     };
 })(jQuery);
-
