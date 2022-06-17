@@ -1,7 +1,7 @@
 /**
  * jreSlider
  *
- * @author Rodrigo da Rosa Elesbão <slipknabos@gmail.com>
+ * @author Rodrigo da Rosa Elesbão <rodrigodarosaelesbao@gmail.com>
  * Plugin jQuery.
  **/
 
